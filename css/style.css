@@ -1,141 +1,61 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap");
+
+/* Utilities */
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: 16px;
 }
-h1 {
-  font-size: 40px;
-  font-weight: bolder;
+.font-yeseva-one {
+  font-family: "Yeseva One", cursive;
 }
-.stay-focused {
-  padding: 25px;
+.text-black-333 {
+  color: #333333;
 }
-.flexible-container {
-  display: flex;
-  margin-bottom: 100px;
-}
-.rectangle-border {
-  position: absolute;
-  width: 4px;
-  height: 115px;
-  left: 12px;
-  top: 51px;
-  background: #ff5959;
-  border-radius: 5px;
-}
-.color-orange {
+.text-orange-333 {
   color: #ffad5a;
 }
-.stay-focused h1 {
+.fs-40 {
   font-size: 40px;
-  line-height: 40px;
-  font-family: "Yeseva One";
-  font-weight: 400;
-  border-left: #ff5959;
 }
-.my-mission-2022 {
-  margin-bottom: 420px;
-}
-.my-mission-2022 h1 {
-  font-weight: 700;
-  text-align: center;
-  color: #13103a;
-}
-.mission-area {
-  margin: 15px 15px;
-  margin-right: 40px;
-  margin-left: 70px;
-}
-#mission {
-  float: left;
-  padding-bottom: 19px;
-  background-color: rgba(79, 157, 166, 0.1);
-}
-#vission {
-  float: left;
-  background-color: rgba(255, 89, 89, 0.1);
-  padding-bottom: 34px;
-}
-#goals {
-  float: left;
-  background-color: #fff4d6;
-}
-.mission-item {
-  width: 360px;
-  padding: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  border-radius: 15px;
-}
-.mission-item img {
-  width: 40%;
-}
-.mission-item h1 {
-  text-align: left;
-  font-size: 24px;
-  font-weight: 600;
-  color: black;
+h1 {
+  font-weight: normal;
 }
 .link-button {
+  color: white;
   text-decoration: none;
   background-color: #ff5959;
-  color: white;
-  padding: 12px;
   border-radius: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding: 12px;
+}
+/* Flexible container & Half width */
+.flexible-container {
+  display: flex;
 }
 .half-width {
   width: 50%;
 }
-.half-width img {
+.person-img {
   width: 60%;
-  padding-left: 180px;
+  padding-left: 25%;
 }
-.without-limits {
-  background: url("../images/shapes/shape-1.png");
-  background-position: -10px;
-  background-size: 81px;
-  background-repeat: no-repeat;
-  margin-bottom: 100px;
+/* Stay Focused section  styling */
+/* The line/border beside the heading */
+.line-border {
+  position: absolute;
+  width: 4px;
+  height: 115px;
+  left: 8px;
+  top: 51px;
+  background: #ff5959;
+  border-radius: 5px;
 }
-.without-limits h1 {
-  font-weight: 700;
-}
-.without-limits-text {
-  float: right;
-  margin-right: 50px;
-}
-.without-limits img {
-  width: 30%;
-  border-radius: 26px;
-  margin-top: 30px;
-  margin-left: 60px;
-}
-.global-community {
-  background-image: url("../images/shapes/Ellipse\ 34.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-position-y: 200px;
-  margin-bottom: 200px;
-}
-.global-community .half-width:first-child {
-  padding: 50px;
-}
-.text-center {
-  text-align: center;
-}
-footer {
-  text-align: center;
-  background-color: #0b0d17;
-  height: 100px;
-  color: white;
-  font-family: "Manrope", sans-serif;
-}
-.footer-first-p {
-  font-family: "Lobster", cursive;
-  font-size: 30px;
-  color: white;
-}
-.footer-first-p span {
-  color: #ff5959;
+/* Mobile Layout */
+@media (min-width: 320px) and (max-width: 767px) {
+  .flexible-container {
+    flex-direction: column;
+  }
+  .half-width {
+    width: 100%;
+  }
 }
