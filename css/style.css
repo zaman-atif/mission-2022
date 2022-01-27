@@ -15,11 +15,17 @@ body {
 .text-orange-333 {
   color: #ffad5a;
 }
+.text-deep-blue {
+  color: #13103a;
+}
+.text-center {
+  text-align: center;
+}
+.fw-regular {
+  font-weight: normal !important;
+}
 .fs-40 {
   font-size: 40px;
-}
-h1 {
-  font-weight: normal;
 }
 .link-button {
   color: white;
@@ -50,6 +56,28 @@ h1 {
   background: #ff5959;
   border-radius: 5px;
 }
+/* My Mission in 2022 */
+.my-mission {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+.my-mission img {
+  width: 141px;
+}
+.mission-card {
+  border-radius: 26px;
+  padding: 10px;
+}
+#mission {
+  background-color: rgba(79, 157, 166, 0.1);
+}
+#vision {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+#goals {
+  background-color: #fff4d6;
+}
 /* Mobile Layout */
 @media (min-width: 320px) and (max-width: 767px) {
   .flexible-container {
@@ -57,5 +85,16 @@ h1 {
   }
   .half-width {
     width: 100%;
+  }
+  .my-mission {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+  }
+}
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .my-mission {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
   }
 }
